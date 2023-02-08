@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="img-container">
+            <img src="https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+    
+            <div class="caption">
+                <p class="caption-body">Quintessential</p>
+            </div>
+        
+            <div class="creds">
+                <p>Photo by <a href="https://unsplash.com/@eberhardgross?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">eberhard 🖐 grossgasteiger</a> on <a href="https://unsplash.com/photos/nqYbkm8Wg_I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            </div>
+        </div>
+        <div class="signup-container">
+            <div class="uppertext-container">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p>
+                <p>You <i>know</i> you want to.</p>
+            </div>
+            <div class="form-container">
+                <p>Let's do this!</p>
+            <form>
+                <div>
+                    <div>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" minlength="1"  required>
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" minlength="1" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" pattern="[a-z0-9._+=%]+@[a-z0-9._+=%]+\.[a-z0-9]{2,}$" title="that is not a valid email. Please follow the correct format: example@example.com" required>
+                    </div>
+                    <div>
+                        <label for="phone_number" >Phone Number</label>
+                        <input type="text" id="phone_number" pattern="^\d{9,15}$" required>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <div>
+                        <label for="confirm_pass">Confirm Password</label>
+                        <input type="password" id="confirm_pass" required>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-container">
+                <button type="submit">Create Account</button>
+                <p>Already have an account? <a href="">Login now.</a></p>
+            </div>
+            
+            </form>
+            
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

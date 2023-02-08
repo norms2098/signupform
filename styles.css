@@ -1,0 +1,150 @@
+
+:root{
+    --font-text:'Julius Sans One', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    background-color: #bcb9ce;
+    font-family: var(--font-text);
+
+}
+
+.main-container{
+    display: flex;
+    height:100vh;
+}
+
+/*<---CSS for image--->*/
+.img-container{
+    position: relative;
+}
+.img-container img{
+    height:100%;
+}
+.caption,.creds{
+    position: absolute;
+}
+.caption{
+    background-color: black;
+    width:100%;
+    opacity: 0.6;
+    color:white;
+    top:100px;
+}
+.caption-body{
+    color:white;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    text-align:center;
+    font-size:50px;
+}
+.creds{
+    bottom:0;
+    color:white;
+    font-size: 10px;
+}
+.creds a{
+    color:white;
+    text-decoration: none;
+}
+/*<---ends here--->*/
+
+/*<---CSS for right side--->*/
+
+/*<---CSS for upper text*/
+.uppertext-container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 150px;
+    font-weight: bold;
+    font-size: larger;
+    text-align: left;
+
+}
+/*<---ends here--->*/
+
+/*<---CSS for form--->*/
+form > div > div {
+    display: flex;
+    flex-direction: column;
+}
+
+form > div{
+    display:flex;
+    flex-direction: row;
+    gap:110px;
+    margin-bottom: 25px;
+}
+label{
+    margin-bottom:3px;
+    font-size: medium;
+    letter-spacing: 4px;
+}
+input{
+    border-radius: 5px;
+    height:30px;
+    width:250px;
+    border:none;
+    background-color:hsl(267, 81%, 86%);
+    font-weight:bold;
+    border:1px solid black;
+    
+}
+input:hover{
+    transform:scale(1.1);
+}
+input:valid{
+    border-color: green;
+}
+input:invalid{
+    border-color: red;
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    background-color:#fcd1ca;
+    padding:30px;
+    box-shadow: 5px 5px 5px grey;
+}
+.form-container p{
+    font-weight: bold;
+    font-size: larger;
+}
+/*<---ends here--->*/
+
+/*<---CSS for submit*/
+.submit-container{
+    display: flex;
+    flex-direction: column;
+    margin-top:25px;
+    padding-left:30px;
+}
+.submit-container button{
+    width:200px;
+    height:45px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    background-color: #624a5a;
+    color:white;
+    font-family: var(--font-text);
+}
+.submit-container button:hover{
+    cursor: pointer;
+    background-color: hsl(320, 42%, 74%);
+    color:black;
+}
+.submit-container a{
+    text-decoration: none;
+    color:  #624a5a;
+}
+.submit-container a:hover{
+    color:black;
+}
+/*<---ends here--->*/
+
