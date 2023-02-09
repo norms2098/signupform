@@ -97,13 +97,9 @@ input{
 }
 input:hover{
     transform:scale(1.1);
+    border:1px solid black;
 }
-input:valid{
-    border-color: green;
-}
-input:invalid{
-    border-color: red;
-}
+
 .form-container{
     display: flex;
     flex-direction: column;
